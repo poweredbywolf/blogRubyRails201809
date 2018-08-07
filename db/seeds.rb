@@ -21,8 +21,8 @@ puts "5 skills created"
     title: "Portfolio title #{portfolio_item}",
     subtitle: "My great service",
     body: "Unthinking respect for authority is the greatest enemy of truth.",
-    main_image: , "https://place-hold.it/300x200"
-    thumb_image: "https://place-hold.it/350x200"  
+    main_image: "https://place-hold.it/300x200"
+    thumb_image: "https://place-hold.it/350x200"
   )
 
 end
