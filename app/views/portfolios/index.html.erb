@@ -1,11 +1,26 @@
 <h1>Portfolio Items<h1>
 
+
+
+
+
 <% @portfolio_items.each do |portfolio_item| %>
   <p><%= portfolio_item.title %></p>
   <p><%= portfolio_item.subtitle %></p>
   <p><%= portfolio_item.body %></p>
-  <p><%= image_tag portfolio_item.thumb_image %></p>
-
-
+  <p><%= image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil? %></p>
 
 <% end %>
+
+<p> <!--
+  The <% is a way to embed ruby script in an HTML file
+  The @portfolio_items is fetching an array
+  the .each is causing it to loop through the whole array
+  the portfolio_item is the variable it puts it in with each loop
+  it then displays the portfolio_item.title .subtitle
+  .body etc all the ones we have listed under <%=
+
+
+  To display the data from a ruby variable you need
+  to place the <%= note the equal -->
+  </p>
