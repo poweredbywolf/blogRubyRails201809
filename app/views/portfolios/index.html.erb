@@ -4,7 +4,11 @@
 
 <%= link_to "Create New Item", new_portfolio_path %>
 
-
+<p> <!-- the reason why rake routes only give new_portfolio
+  and not new_portfolio_path is to give the user the ability
+  to choose between path or url the difference
+   between using _path or _url is that _path is relative
+   path --> <p>
 <% @portfolio_items.each do |portfolio_item| %>
   <p><%= link_to portfolio_item.title, portfolio_path(portfolio_item) %></p>
   <p> <!-- We are passing the portfolio_item.id portfolio_path(portfolio_item.id)
